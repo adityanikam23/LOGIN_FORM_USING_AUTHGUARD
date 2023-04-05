@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark text-capitalize">
+    <div class="container">
+        <a class="navbar-brand" routerLink="/">
+            <h4>authguard-two</h4>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#mynavbar">
+            <span class="navbar-toggler"></span>
+        </button>
+        <div id="mynavbar" class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a routerLink="/users/admins" class="nav-link fs-5 fw-bold">admins</a></li>
+            </ul>
+           
+        </div>
+        <button type="button" (click)="logout()" class="btn btn-primary text-capitalize fs-5 fw-bold">log out</button>
+    </div>
+</nav>
+
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
